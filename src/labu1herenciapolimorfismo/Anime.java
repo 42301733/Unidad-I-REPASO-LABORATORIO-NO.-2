@@ -9,14 +9,14 @@ package labu1herenciapolimorfismo;
  * @author Jorge
  */
 public class Anime extends Media{
-    private int durationInMinutes;
+    private int durationInMinutess;
 
     public Anime(int durationInMinutes, String titulo, String autor) {
         super(titulo, autor);
-        this.durationInMinutes = durationInMinutes;
+        this.durationInMinutess = durationInMinutes;
     }
      @Override
  public void play(){
- System.out.println("Watching: " + getTitulo() + " directed by" + getAutor() + " Duration: " + durationInMinutes + " minutes");
+ System.out.println("Watching: " + getTitulo() + " directed by" + getAutor() + " Duration: " + durationInMinutess + " minutes");
 }
 }
