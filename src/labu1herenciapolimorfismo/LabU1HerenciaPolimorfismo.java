@@ -22,22 +22,21 @@ public class LabU1HerenciaPolimorfismo {
         // para el objeto movie pasa los siguientes valores: "Titanic", "James Cameron", 180
         // para el objeto book los valores: "Java How To Program", "Deitel", 500
         // para el objeto music los valores: "Imagine" "John Lennon", "Rock"
-
-        
+Media movie = new Movie(180,"Titanic","James Cameron");
+Media book = new Book(500,"Java How to Program","Deitel");
+Media music = new Music("Rock","Imagine","John Lennon");
         // TODO 25: Crea un objeto de tipo MediaLibrary llamado mediaLibrary
-
-        
+MediaLibrary mediaLibrary = new MediaLibrary();
         // TODO 26: Ahora llama al método addLibrary del objeto mediaLibrary
         // y asignale cada uno de tus medios
         // ejemplo: mediaLibrary.addItem(movie);
         // agrega todos los otros dos objetos
-
-        
-        
+mediaLibrary.addLibrary(movie);
+mediaLibrary.addLibrary(book);
+mediaLibrary.addLibrary(music);
         // TODO 27: Ahora llama al método playAllItems del objeto mediaLibrary
         // para poner en play todos tus medios o items
-
-        
+mediaLibrary.playAllItems();
         // Ejecuta tu programa, la salida debe ser la siguiente:
         // Watching Titanic directed by James Cameron, Duration: 180 minutes
         // Reading Java How To Program by Deitel with 500 pages
