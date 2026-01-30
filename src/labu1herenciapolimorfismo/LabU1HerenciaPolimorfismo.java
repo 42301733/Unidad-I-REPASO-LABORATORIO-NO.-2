@@ -25,6 +25,7 @@ public class LabU1HerenciaPolimorfismo {
 Media movie = new Movie(180,"Titanic","James Cameron");
 Media book = new Book(500,"Java How to Program","Deitel");
 Media music = new Music("Rock","Imagine","John Lennon");
+Media anime = new Anime(23,"Jujutsu Kaisen"," Gege Akutami");
         // TODO 25: Crea un objeto de tipo MediaLibrary llamado mediaLibrary
 MediaLibrary mediaLibrary = new MediaLibrary();
         // TODO 26: Ahora llama al método addLibrary del objeto mediaLibrary
@@ -34,6 +35,7 @@ MediaLibrary mediaLibrary = new MediaLibrary();
 mediaLibrary.addLibrary(movie);
 mediaLibrary.addLibrary(book);
 mediaLibrary.addLibrary(music);
+mediaLibrary.addLibrary(anime);
         // TODO 27: Ahora llama al método playAllItems del objeto mediaLibrary
         // para poner en play todos tus medios o items
 mediaLibrary.playAllItems();
